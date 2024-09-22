@@ -1,0 +1,7 @@
+.display {
+    width: 100%;
+    height: calc(100% - 50px);
+    background-image: var(--imageSrc);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

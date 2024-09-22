@@ -1,0 +1,30 @@
+.mapConfig {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    border: 1px solid grey;
+    background-color: #aaa;
+    transform: translateX(calc(-100% + 20px));
+    transition-duration: 0.5s;
+    box-sizing: border-box;
+    padding-right: 30px;
+    &.active {
+        transform: translateX(0%);
+    }
+    .opener {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid grey;
+        height: 100%;
+        width: 20px;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+    }
+}
