@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import { useLocalStorage } from '../../hooks/useStorage';
 
-export default function ColorPicker({defaultColor, children, passValue}) {
-    const [color, setColor] = useState(defaultColor);
+export default function ColorPicker({defaultColor, storageKey, children, passValue}) {
+    const [color, setColor] = useLocalStorage(storageKey, defaultColor);
 
     useEffect(()=>{
         if (typeof passValue === 'function'){
