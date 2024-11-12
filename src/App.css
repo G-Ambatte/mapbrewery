@@ -13,6 +13,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.interactive.icon::before {
+.interactive.icon {
   cursor: pointer;
 }
