@@ -6,3 +6,13 @@
   height: 100vh;
   background-color: #666;
 }
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.interactive.icon::before {
+  cursor: pointer;
+}
