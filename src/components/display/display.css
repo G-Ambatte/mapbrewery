@@ -5,3 +5,26 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.display .toolbar {
+    width: 300px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #aaa;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 1px white,
+                1px 0 white,
+                -1px 0 white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.display .toolbar span {
+    width: 85px;
+}
+.display .toolbar span.icon {
+    width: fit-content;
+}
